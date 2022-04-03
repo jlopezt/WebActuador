@@ -1,0 +1,41 @@
+{
+  "Proceso":{
+    "IP": "10.68.0.101",
+    "puerto" : 8100,
+    "outputFile" : "salida.log"
+  },
+  "Apps":[
+    {
+      "nombre":"Garaje",
+      "IP": "10.68.0.52",        
+      "Servicios":[        
+        {"nombre":"entradas","fichero":"entradas.html", "Parametros":[
+          {"nombre":"topic", "valor": "casaPre/PuertaGaraje/#"},
+          {"nombre": "hostname","valor": "mqtt.lopeztola.com"}
+          ]
+        },
+        {"nombre":"salidas","fichero":"salidas.html", "Parametros":[]},
+        {"nombre":"secuenciador","fichero":"secuenciador.html", "Parametros":[]},
+        {"nombre":"secuenciador.js","fichero":"secuenciador.js", "Parametros":[]},        
+        {"nombre":"root","fichero":"root.html", "Parametros":[]},
+        {"nombre":"restart", "fichero": "restart.html", "Parametros":[]},
+        {"nombre":"root.js", "fichero": "root.js", "Parametros":[]},
+        {"nombre":"ficheros", "fichero": "ficheros.html", "Parametros":[]},        
+        {"nombre":"editaFichero", "fichero": "editaFichero.html", "Parametros":[]},
+        {"nombre":"particiones", "fichero": "particiones.html", "Parametros":[]},
+        {"nombre":"info", "fichero": "info.html", "Parametros":[]},
+        {"nombre":"maquinaEstados", "fichero": "maquinaEstados.html", "Parametros":[]}
+      ]
+    },
+    {
+      "nombre":"Escalera",
+      "IP": "10.68.1.80",
+      "Servicios":[
+        {"nombre":"Xroot","fichero":"root.html", "Parametros":[]},
+        {"nombre":"Xentradas","fichero":"entradas.html", "Parametros":[]},
+        {"nombre":"Xsalidas","fichero":"salidas.html", "Parametros":[]},
+        {"nombre":"Xsecuenciador","fichero":"secuenciador.html", "Parametros":[]}
+      ]
+    }    
+  ]
+}
